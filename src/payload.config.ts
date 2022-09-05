@@ -4,9 +4,10 @@ import Categories from './collections/Categories';
 import Posts from './collections/Posts';
 import Tags from './collections/Tags';
 import Users from './collections/Users';
+import Example from './collections/Example';
 
 export default buildConfig({
-  serverURL: 'https://automark-payloadcms-production.up.railway.app',
+  serverURL: process.env.PAYLOAD_PUBLIC_SERVER,
   admin: {
     user: Users.slug,
   },
@@ -15,6 +16,7 @@ export default buildConfig({
     Posts,
     Tags,
     Users,
+    Example,
   ],
   typescript: {
     outputFile: path.resolve(__dirname, 'payload-types.ts')
