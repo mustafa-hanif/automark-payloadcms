@@ -6,7 +6,7 @@ import Tags from './collections/Tags';
 import Users from './collections/Users';
 
 export default buildConfig({
-  serverURL: 'http://0.0.0.0:3000',
+  serverURL: 'https://automark-payloadcms-production.up.railway.app',
   admin: {
     user: Users.slug,
   },
